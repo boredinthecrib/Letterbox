@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./Signup.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="form-title">Sign Up</h1>
+
+      <!-- form -->
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Success! 🎉</h2>
+        <p>You have successfuly filled the form!</p>
+      </div>
+    </div>
+  </body>
+</html>
